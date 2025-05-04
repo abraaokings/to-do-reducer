@@ -1,8 +1,5 @@
-type TodoInputProps = {
-  newTodo: string;
-  setNewTodo: (value: string) => void;
-  handleSubmit: (e: React.FormEvent) => void;
-};
+import { TodoInputProps } from "../types/Todo";
+
 
 export function TodoInput({ newTodo, setNewTodo, handleSubmit }: TodoInputProps) {
   return (
