@@ -1,17 +1,6 @@
 import { useReducer, useState } from "react";
-
+import { Todo, Action } from "../../types/Todo";
 import style from "./TodoReducer.module.css";
-
-type Todo = {
-    id: number,
-    text: string,
-    completed: boolean,
-}
-
-type Action = 
-    | { type: 'ADD_TODO'; text: string }
-    | { type: 'TOGGLE_TODO'; id: number }
-    | { type: 'REMOVE_TODO'; id: number }
 
 const todoReducer = (state: Todo[], action: Action): Todo[] => {
     switch(action.type) {
