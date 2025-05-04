@@ -1,10 +1,6 @@
-import { Todo } from '../types/Todo';
+import { TodoItemProps } from '../types/Todo';
 
-type TodoItemProps = {
-  todo: Todo;
-  onToggle: (id: number) => void;
-  onRemove: (id: number) => void;
-};
+
 
 export function TodoItem({ todo, onToggle, onRemove }: TodoItemProps) {
   return (

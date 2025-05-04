@@ -8,7 +8,13 @@ export type TodoInputProps = {
     newTodo: string;
     setNewTodo: (value: string) => void;
     handleSubmit: (e: React.FormEvent) => void;
-  }
+}
+
+export type TodoItemProps = {
+    todo: Todo;
+    onToggle: (id: number) => void;
+    onRemove: (id: number) => void;
+}
 
 export type Action = 
     | { type: 'ADD_TODO'; text: string }
